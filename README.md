@@ -10,13 +10,13 @@ In order to run it locally you'll need to fetch some dependencies and a basic se
     $ npm install
     ```
 
-* To test your react-avatar and your changes, start the development server and open `http://localhost:8000/index.html`.
+* Start the development server and open `http://localhost:8080`.
 
     ```sh
-    $ npm run dev
+    $ npm run serve
     ```
     
-* To create a local production build into the `lib` and `es` folders.
+* To build production bundle use:
 
    ```sh
    $ npm run build
