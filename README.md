@@ -1,19 +1,23 @@
 ![Screenshot](src/assets/img/preview.jpg)
 
-## Project setup
-```
-npm install
-```
+## Development
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+In order to run it locally you'll need to fetch some dependencies and a basic server setup.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+* Install local dependencies:
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+    ```sh
+    $ npm install
+    ```
+
+* To test your react-avatar and your changes, start the development server and open `http://localhost:8000/index.html`.
+
+    ```sh
+    $ npm run dev
+    ```
+    
+* To create a local production build into the `lib` and `es` folders.
+
+   ```sh
+   $ npm run build
+   ```
