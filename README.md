@@ -1,4 +1,4 @@
-![Alt text](assets/img/random.svg "Title")
+![Screenshot](assets/img/random.svg)
 
 ## Project setup
 ```
