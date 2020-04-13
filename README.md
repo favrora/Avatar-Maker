@@ -1,4 +1,4 @@
-![Screenshot](assets/img/random.svg)
+![Screenshot](src/assets/img/random.svg)
 
 ## Project setup
 ```
