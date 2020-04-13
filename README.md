@@ -1,4 +1,10 @@
-![Screenshot](src/assets/img/preview.jpg)
+# Avatar Maker
+
+Collect your avatar from different parts
+
+## Preview
+
+![Preview](src/assets/img/preview.jpg)
 
 ## Development
 
