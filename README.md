@@ -1,19 +1,23 @@
-![Screenshot](src/assets/img/random.svg)
+![Screenshot](src/assets/img/preview.jpg)
 
-## Project setup
-```
-npm install
-```
+## Development
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+In order to run it locally you'll need to fetch some dependencies and a basic server setup.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+* Install local dependencies:
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+    ```sh
+    $ npm install
+    ```
+
+* Start the development server and open `http://localhost:8080`.
+
+    ```sh
+    $ npm run serve
+    ```
+    
+* To build production bundle use:
+
+   ```sh
+   $ npm run build
+   ```
