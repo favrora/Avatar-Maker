@@ -8,6 +8,15 @@ Collect your avatar from different parts
 
 ## Development
 
+Getting Start:
+* Open a terminal. 
+* Go to the folder where you want to copy the project. 
+* Copy the project with this command:
+
+    ```sh
+    $ git clone https://github.com/fleksl/avatar-maker.git
+    ```
+
 In order to run it locally you'll need to fetch some dependencies and a basic server setup.
 
 * Install local dependencies:
