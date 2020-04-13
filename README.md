@@ -1,4 +1,4 @@
-# avatar-maker
+![Alt text](assets/img/random.svg "Title")
 
 ## Project setup
 ```
