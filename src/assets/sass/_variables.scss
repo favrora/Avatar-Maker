@@ -1,0 +1,30 @@
+/*****************************
+******* Variables SCSS *******
+*****************************/
+
+// Variables
+$brand: #0077ff;
+
+$white: #ffffff;
+$shadow: #adadad;
+$border: #707070;
+$bg: #ffdbb4;
+
+
+// phones
+$mobile-width: 414px;
+
+// medium tablets
+$tablet-width: 799px;
+
+// large tablets
+$desktop-width: 991px;
+
+// desktop wide
+$desktop-wide-width: 1200px;
+
+
+// for consistence with old styles
+$tablet-min-width: $tablet-width;
+$tablet-max-width: $desktop-width;
+$wide-min-width: $desktop-wide-width;

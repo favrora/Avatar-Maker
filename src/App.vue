@@ -1,28 +1,59 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div id="avatar">
+      <Accesories />
+      <Clothes />
+      <Eyebrows />
+      <Eyes />
+      <Facialhair />
+      <Glasses />
+      <Hair />
+      <Mounths />
+      <SkinColor />
+      <Tattoos />
+    </div>
+    <Footer />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import avatar component
+import Accesories  from './components/layout/accesories'
+import Clothes     from './components/layout/clothes'
+import Eyebrows    from './components/layout/eyebrows'
+import Eyes        from './components/layout/eyes'
+import Facialhair  from './components/layout/facialhair'
+import Glasses     from './components/layout/glasses'
+import Hair        from './components/layout/hair'
+import Mounths     from './components/layout/mouths'
+import SkinColor   from './components/layout/SkinColor'
+import Tattoos     from './components/layout/tattoos'
+
+// import footer
+import Footer      from './components/footer'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Accesories,
+    Clothes,
+    Eyebrows,
+    Eyes,
+    Facialhair,
+    Glasses,
+    Hair,
+    Mounths,
+    SkinColor,
+    Tattoos,
+    Footer
   }
 }
 </script>
 
+// import scss
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import "./assets/sass/variables";
+@import "./assets/sass/responsive";
+@import "./assets/sass/avatar";
+@import "./assets/sass/footer";
 </style>
