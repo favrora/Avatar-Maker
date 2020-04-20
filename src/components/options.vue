@@ -118,7 +118,7 @@
   </div>
 
   <div id="backArrow" v-if="mainOpt === false" @click="reset()">
-    Back
+    <img :src="require('../assets/img/back.png')">
   </div>
 
 </div>

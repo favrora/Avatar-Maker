@@ -13,6 +13,10 @@ body {
 	font: 16px sans-serif, Arial, Verdana;
 }
 
+img {
+	max-width: 100%;
+}
+
 #app {
 	position: relative;
 	overflow: hidden;

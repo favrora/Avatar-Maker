@@ -152,10 +152,15 @@
   }
 }
 
-
 #backArrow {
+  width: 40px;
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: 10px;
+  bottom: 90px;
   cursor: pointer;
+  opacity: 0.6;
+  transition: 200ms;
+  &:hover {
+    opacity: 1;
+  }
 }
