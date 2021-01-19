@@ -5,6 +5,7 @@
     </div>
 
     <Options />
+
   </div>
 </template>
 

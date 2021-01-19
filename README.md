@@ -14,7 +14,13 @@ Getting Start:
 * Copy the project with this command:
 
     ```sh
-    $ git clone https://github.com/fleksl/avatar-maker.git
+    $ git clone https://github.com/favrora/Avatar-Maker.git
+    ```
+
+* Go to the project folder:
+
+    ```sh
+    $ cd avatar-maker
     ```
 
 In order to run it locally you'll need to fetch some dependencies and a basic server setup.
@@ -42,4 +48,3 @@ In order to run it locally you'll need to fetch some dependencies and a basic se
 * Add function to download created avatar as a png image.
 * Adapt program for mobile devices.
 * Make it possible to change the color of clothes, hair, background.
-* Create a site to preview this program.
