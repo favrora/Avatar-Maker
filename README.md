@@ -49,9 +49,9 @@ In order to run it locally you'll need to fetch some dependencies and a basic se
 
 ## Open tasks
 
-[* Add function to download created avatar as a png image.](https://github.com/favrora/Avatar-Maker/issues/7)
-[* Align the avatar to the bottom for mobile devices.](https://github.com/favrora/Avatar-Maker/issues/9)
-[* Change random avatar without reloading the site](https://github.com/favrora/Avatar-Maker/issues/8)
+* [Add function to download created avatar as a png image.](https://github.com/favrora/Avatar-Maker/issues/7)
+* [Align the avatar to the bottom for mobile devices.](https://github.com/favrora/Avatar-Maker/issues/9)
+* [Change random avatar without reloading the site](https://github.com/favrora/Avatar-Maker/issues/8)
 
 ## Completed tasks
 
