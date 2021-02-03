@@ -2,6 +2,10 @@
 
 Collect your avatar from different parts. The code of this program is very easy, any developer will be able to understand the code. SVG is used to draw an avatar.
 
+## Demo
+
+[Demo version of the project](https://avatar-maker-vue.netlify.app/)
+
 ## Preview
 
 ![Preview](src/assets/img/preview.jpg)
@@ -48,3 +52,7 @@ In order to run it locally you'll need to fetch some dependencies and a basic se
 * Add function to download created avatar as a png image.
 * Adapt program for mobile devices.
 * Make it possible to change the color of clothes, hair, background.
+
+## Completed tasks
+
+* ~~Create a demo site.~~ | Done by [Andrew Kliskey](https://github.com/andrewkliskey)
