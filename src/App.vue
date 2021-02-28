@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <div id="avatar">
+      <SaveImage />
       <Accesories />
       <Clothes />
       <Eyebrows />
@@ -32,6 +33,9 @@ import Tattoos     from './components/layout/tattoos'
 // import footer
 import Footer      from './components/footer'
 
+// import save Image
+import SaveImage   from './components/save_image'
+
 export default {
   name: 'App',
   components: {
@@ -45,7 +49,8 @@ export default {
     Mounths,
     SkinColor,
     Tattoos,
-    Footer
+    Footer,
+    SaveImage
   }
 }
 </script>
