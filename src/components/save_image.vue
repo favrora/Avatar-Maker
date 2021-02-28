@@ -77,7 +77,7 @@ export default {
       canvas.width = 420;
       canvas.height = 420;
       const ctx = canvas.getContext('2d');
-      const drawn = Canvg.fromString(ctx, combinedSvg, { ignoreClear: true, ignoreMouse: true });
+      const drawn = Canvg.fromString(ctx, combinedSvg);
 
       await drawn.render();
 
