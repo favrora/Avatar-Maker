@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <div id="avatar">
-      <SaveImage />
       <Accesories />
       <Clothes />
       <Eyebrows />
@@ -14,6 +13,7 @@
       <Tattoos />
     </div>
     <Footer />
+    <SaveImage/>
   </div>
 </template>
 
@@ -61,4 +61,5 @@ export default {
 @import "./assets/sass/responsive";
 @import "./assets/sass/avatar";
 @import "./assets/sass/footer";
+@import "./assets/sass/save_image"
 </style>

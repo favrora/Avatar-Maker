@@ -1,5 +1,7 @@
 <template>
-  <button id="save" @click="saveImage">Download Avatar</button>
+  <div id="save-image">
+    <button type="button" class="save-button" @click="saveImage">Download Avatar</button>
+  </div>
 </template>
 
 <script>
