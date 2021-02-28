@@ -10,16 +10,33 @@ import Canvg from 'canvg';
 export default {
   name: 'SaveImage',
   methods: {
+    downloadImage(imageURL) {
+      const downloadLink = document.createElement('a');
+      downloadLink.href = imageURL;
+      downloadLink.download = 'avatar.png';
+      document.body.appendChild(downloadLink);
+      downloadLink.dispatchEvent(
+          new MouseEvent('click', { 
+            bubbles: true, 
+            cancelable: true, 
+            view: window 
+          })
+        );
+
+      // Remove link from body
+      document.body.removeChild(downloadLink);
+    },
     async saveImage() {
       const avatarDiv = document.querySelector('#avatar');
 
       let combinedSvg = '<svg width="100%" height="100%">';
 
-      function addIfAvailable(element) {
+      const addIfAvailable = (element) => {
         if (element !== undefined && element !== null) {
           combinedSvg = combinedSvg + element.outerHTML;
         }
-      }
+      };
+
       addIfAvailable(avatarDiv.querySelector('#skincolor').querySelector('.show'));
       addIfAvailable(avatarDiv.querySelector('#mouths').querySelector('.show'));
       addIfAvailable(avatarDiv.querySelector('#eyes').querySelector('.show'));
@@ -31,9 +48,7 @@ export default {
       addIfAvailable(avatarDiv.querySelector('#hair').querySelector('.show'));
       addIfAvailable(avatarDiv.querySelector('#glasses').querySelector('.show'));
 
-
       combinedSvg = combinedSvg + '</svg>';
-      console.log(combinedSvg);
 
       const canvas = document.createElement("canvas"); // create a canvas element
       canvas.width = 420;
@@ -43,21 +58,7 @@ export default {
 
       await drawn.render();
 
-      const imageURL = canvas.toDataURL('image/png');
-      const link = document.createElement('a');
-      link.href = imageURL;
-      link.download = 'avatar.png';
-      document.body.appendChild(link);
-      link.dispatchEvent(
-          new MouseEvent('click', { 
-            bubbles: true, 
-            cancelable: true, 
-            view: window 
-          })
-        );
-
-      // Remove link from body
-      document.body.removeChild(link);
+      this.downloadImage(canvas.toDataURL('image/png'));
     }
   }
 }
