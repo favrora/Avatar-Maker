@@ -54,5 +54,5 @@ In order to run it locally you'll need to fetch some dependencies and a basic se
 
 ## Completed tasks
 
-* ~~Add function to download created avatar as a png image.~~ | Done by [Peter H.](https://github.com/PetFeld)
-* ~~Create a demo site.~~ | Done by [Andrew Kliskey](https://github.com/andrewkliskey)
+* ~~Add function to download created avatar as a png image.~~ | Done by [Peter H.](https://github.com/PetFeld) | 01.03.2021
+* ~~Create a demo site.~~ | Done by [Andrew Kliskey](https://github.com/andrewkliskey) | 03.02.2021
