@@ -13,6 +13,7 @@
       <Tattoos />
     </div>
     <Footer />
+    <SaveImage/>
   </div>
 </template>
 
@@ -32,6 +33,9 @@ import Tattoos     from './components/layout/tattoos'
 // import footer
 import Footer      from './components/footer'
 
+// import save Image
+import SaveImage   from './components/save_image'
+
 export default {
   name: 'App',
   components: {
@@ -45,7 +49,8 @@ export default {
     Mounths,
     SkinColor,
     Tattoos,
-    Footer
+    Footer,
+    SaveImage
   }
 }
 </script>
@@ -56,4 +61,5 @@ export default {
 @import "./assets/sass/responsive";
 @import "./assets/sass/avatar";
 @import "./assets/sass/footer";
+@import "./assets/sass/save_image"
 </style>
