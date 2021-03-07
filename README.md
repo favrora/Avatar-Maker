@@ -8,7 +8,7 @@ Collect your avatar from different parts. The code of this program is very easy,
 
 ## Preview
 
-![Preview](src/assets/img/preview.jpg)
+![Preview](src/assets/img/preview.gif)
 
 ## Development
 
