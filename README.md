@@ -62,4 +62,6 @@ In order to run it locally you'll need to fetch some dependencies and a basic se
 
 ## Donate
 
-<iframe src="https://funding.webmoney.ru/widgets/horizontal/14b0e43c-551f-4b45-bdf1-163758f0f8cf?bt=4&hs=1&sum=5" width="468" height="150" scrolling="no" style="border:none;"></iframe>
+The program is absolutely free, but you can help us in development by donating money. All donated money will go towards the development of the Avatar Maker project.
+
+[Send donation](https://favrora.com/projects/avatar-maker)
