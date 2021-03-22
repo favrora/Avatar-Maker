@@ -40,6 +40,7 @@
       <path fill="#000000" fill-opacity="0.7" d="M125 125c1,-4 5,-8 10,-7 5,1 9,3 13,6 5,3 12,8 17,9 -5,3 -10,2 -13,0 -5,-2 -10,-7 -16,-9 -3,-1 -7,0 -11,1z"/>
       <path fill="#000000" fill-opacity="0.7" d="M235 125c-1,-4 -5,-8 -10,-7 -5,1 -9,3 -13,6 -5,3 -12,8 -17,9 5,3 9,2 13,0 5,-2 10,-7 15,-9 4,-1 8,0 12,1z"/>
     </g>
+    <g id="eb_none"></g>
   </svg>
 </template>
 
@@ -48,23 +49,30 @@ export default {
   name: "Eyebrows",
   data() {
     return {
-      list: ['#eb_default','#eb_default2','#eb_raised','#eb_sad','#eb_sad2','#eb_unibrow','#eb_updown','#eb_updown2','#eb_angry','#eb_angry2']
+      list: ['#eb_default','#eb_default2','#eb_raised','#eb_sad','#eb_sad2','#eb_unibrow','#eb_updown','#eb_updown2','#eb_angry','#eb_angry2', '#eb_none']
     }
   },
 
   methods: {
-    picker: function() {
-    	var chosenEyebrows = Math.floor(Math.random() * this.list.length);
-      var chosenNameEyebrows = this.list[chosenEyebrows];
-
-      document.querySelector(chosenNameEyebrows).classList.add('show');
+    picker(option = false){
+      this.hide_all();
+      option
+        ? document.querySelector(option).classList.add('show')
+        : document.querySelector(this.random_option()).classList.add('show');
+    },
+    random_option(){
+      var chosenEyebrows = Math.floor(Math.random() * this.list.length);
+      return this.list[chosenEyebrows];
+    },
+    hide_all(){
+      for (let i = 0; i < this.list.length; i++){
+        document.querySelector(this.list[i]).classList.remove('show');
+      }
     }
   },
 
-  mounted() {
-    window.addEventListener('load', () => {
-      this.picker();
-    })
+  created() {
+    this.$root.$refs.Eyebrows = this;
   }
 }
 </script>

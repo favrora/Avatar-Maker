@@ -99,7 +99,7 @@
 
 <script>
 export default {
-  name: "OptionsFacialHair",
+  name: "OptionsEyebrows",
   methods: {
     deleteClass() {
       let c = document.getElementById('eyebrows').children, i;

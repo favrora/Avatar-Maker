@@ -66,6 +66,7 @@
     <g id="h_shorthairsides">
       <path class="tinted" fill="#bb7748" d="M113 136c1,-1 1,-2 1,-3 0,-12 1,-19 2,-31 0,0 -1,0 -2,0 -4,4 -10,13 -12,32 0,2 1,4 3,4 2,-1 4,-2 6,-2l2 0zm134 0c-1,-1 -1,-2 -1,-3 0,-12 -1,-19 -2,-31 0,0 1,0 2,0 4,4 10,13 12,32 0,2 -1,4 -3,4 -2,-1 -4,-2 -6,-2l-2 0z"/>
     </g>
+    <g id="h_none"></g>
   </svg>
 </template>
 
@@ -75,23 +76,30 @@ export default {
   name: "Hair",
   data() {
     return {
-      list: ['#h_longhair','#h_longhairbob','#h_hairbun','#h_longhaircurly','#h_longhaircurvy','#h_longhairdread','#h_shorthairdreads2','#h_miawallace','#h_longhairstraight','#h_longhairstraight2','#h_shorthairdreads','#h_shorthairfrizzle','#h_shorthairshaggy','#h_shorthaircurly','#h_shorthairflat','#h_shorthairround','#h_shorthairwaved','#h_shorthairsides','#h_nottoolong']
+      list: ['#h_longhair','#h_longhairbob','#h_hairbun','#h_longhaircurly','#h_longhaircurvy','#h_longhairdread','#h_shorthairdreads2','#h_miawallace','#h_longhairstraight','#h_longhairstraight2','#h_shorthairdreads','#h_shorthairfrizzle','#h_shorthairshaggy','#h_shorthaircurly','#h_shorthairflat','#h_shorthairround','#h_shorthairwaved','#h_shorthairsides','#h_nottoolong','#h_none']
     }
   },
 
   methods: {
-    picker: function() {
-    	var chosenHair = Math.floor(Math.random() * this.list.length);
-      var chosenNameHair = this.list[chosenHair];
-
-      document.querySelector(chosenNameHair).classList.add('show');
+    picker(option = false){
+      this.hide_all();
+      option
+        ? document.querySelector(option).classList.add('show')
+        : document.querySelector(this.random_option()).classList.add('show');
+    },
+    random_option(){
+      var chosenHair = Math.floor(Math.random() * this.list.length);
+      return this.list[chosenHair];
+    },
+    hide_all(){
+      for (let i = 0; i < this.list.length; i++){
+        document.querySelector(this.list[i]).classList.remove('show');
+      }
     }
   },
 
-  mounted() {
-    window.addEventListener('load', () => {
-      this.picker();
-    })
+  created() {
+    this.$root.$refs.Hair = this;
   }
 }
 </script>
