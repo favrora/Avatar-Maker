@@ -49,7 +49,7 @@ export default {
   name: "Eyebrows",
   data() {
     return {
-      list: ['#eb_default','#eb_default2','#eb_raised','#eb_sad','#eb_sad2','#eb_unibrow','#eb_updown','#eb_updown2','#eb_angry','#eb_angry2', '#eb_none']
+      list: ['#eb_default','#eb_default2','#eb_raised','#eb_sad','#eb_sad2','#eb_unibrow','#eb_updown','#eb_updown2','#eb_angry','#eb_angry2']
     }
   },
 

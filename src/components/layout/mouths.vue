@@ -59,7 +59,7 @@ export default {
   name: "Mouths",
   data() {
     return {
-      list: ['#m_vomit','#m_twinkle','#m_tongue','#m_smile','#m_serious','#m_scream','#m_sad','#m_grimace','#m_eating','#m_disbelief','#m_default','#m_concerned','#m_none']
+      list: ['#m_vomit','#m_twinkle','#m_tongue','#m_smile','#m_serious','#m_scream','#m_sad','#m_grimace','#m_eating','#m_disbelief','#m_default','#m_concerned']
     }
   },
 

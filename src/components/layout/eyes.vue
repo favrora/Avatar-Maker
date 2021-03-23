@@ -66,7 +66,7 @@ export default {
   name: "Eyes",
   data() {
     return {
-      list: ['#e_dizzy','#e_eyeroll','#e_happy','#e_close','#e_hearts','#e_side','#e_wink','#e_squint','#e_surprised','#e_cry','#e_none']
+      list: ['#e_dizzy','#e_eyeroll','#e_happy','#e_close','#e_hearts','#e_side','#e_wink','#e_squint','#e_surprised','#e_cry']
     }
   },
 

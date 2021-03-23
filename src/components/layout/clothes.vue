@@ -38,7 +38,7 @@ export default {
   name: "Clothes",
   data() {
     return {
-      list: ['#c_blazer','#c_sweater','#c_vneck','#c_overall','#c_hoodie', '#c_none']
+      list: ['#c_blazer','#c_sweater','#c_vneck','#c_overall','#c_hoodie']
     }
   },
 
