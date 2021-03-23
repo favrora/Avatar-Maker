@@ -49,7 +49,8 @@
       <path fill="#000000" d="M180 197l0 0c13,0 24,10 24,23l0 1 -48 0 0 -1c0,-13 11,-23 24,-23z"/>
       <path fill="#FEFEFE" d="M180 197l0 0c6,0 12,2 16,6l-32 0c4,-4 10,-6 16,-6z"/>
       <path fill="#FF4F6D" d="M173 211c4,0 5,1 7,3 2,-2 3,-3 7,-3 5,0 11,5 12,10l-38 0c1,-5 7,-10 12,-10z"/>
-    </g>
+    </g>    
+    <g id="m_none"></g>
   </svg>
 </template>
 
@@ -63,18 +64,25 @@ export default {
   },
 
   methods: {
-    picker: function() {
-    	var chosenMouths = Math.floor(Math.random() * this.list.length);
-      var chosenNameMouths = this.list[chosenMouths];
-
-      document.querySelector(chosenNameMouths).classList.add('show');
+    picker(option = false){
+      this.hide_all();
+      option
+        ? document.querySelector(option).classList.add('show')
+        : document.querySelector(this.random_option()).classList.add('show');
+    },
+    random_option(){
+      var chosenMouths = Math.floor(Math.random() * this.list.length);
+      return this.list[chosenMouths];
+    },
+    hide_all(){
+      for (let i = 0; i < this.list.length; i++){
+        document.querySelector(this.list[i]).classList.remove('show');
+      }
     }
   },
 
-  mounted() {
-    window.addEventListener('load', () => {
-      this.picker();
-    })
+  created() {
+    this.$root.$refs.Mouths = this;
   }
 }
 </script>

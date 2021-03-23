@@ -117,7 +117,7 @@
     <OptionsAccesories />
   </div>
 
-  <div id="backArrow" v-if="mainOpt === false" @click="reset()">
+  <div id="backArrow" v-if="mainOpt === false" @click="resetMenu()">
     <img :src="require('../assets/img/back.png')">
   </div>
 
@@ -172,9 +172,12 @@ export default {
     return initialState();
   },
   methods: {
-    reset() {
+    resetMenu() {
       Object.assign(this.$data, initialState());
     }
+  },
+  created() {
+    this.$root.$refs.Options = this;
   }
 }
 

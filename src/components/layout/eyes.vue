@@ -56,6 +56,7 @@
       <circle fill="#000000" fill-opacity="0.7" cx="212" cy="153" r="8"/>
       <path fill="#92D9FF" d="M134 173c0,-3 6,-12 8,-14 2,2 7,11 7,14 0,4 -3,8 -7,8 0,0 0,0 0,0 0,0 0,0 0,0 -4,0 -8,-4 -8,-8z"/>
     </g>
+    <g id="e_none"></g>
   </svg>
 </template>
 
@@ -70,18 +71,25 @@ export default {
   },
 
   methods: {
-    picker: function() {
-    	var chosenEyes = Math.floor(Math.random() * this.list.length);
-      var chosenNameEyes = this.list[chosenEyes];
-
-      document.querySelector(chosenNameEyes).classList.add('show');
+    picker(option = false){
+      this.hide_all();
+      option
+        ? document.querySelector(option).classList.add('show')
+        : document.querySelector(this.random_option()).classList.add('show')
+    },
+    random_option(){
+      var chosenEyes = Math.floor(Math.random() * this.list.length);
+      return this.list[chosenEyes];
+    },
+    hide_all(){
+      for (let i = 0; i < this.list.length; i++){
+        document.querySelector(this.list[i]).classList.remove('show');
+      }
     }
   },
 
-  mounted() {
-    window.addEventListener('load', () => {
-      this.picker();
-    })
+  created() {
+    this.$root.$refs.Eyes = this;
   }
 }
 </script>

@@ -1,7 +1,10 @@
 <template>
   <div id="footer">
     <div id="settings">
-      <img id="random" @click="reloadPage()" :src="require('../assets/img/random.svg')">
+      <img id="random" @click="randomAvatar()" :src="require('../assets/img/random.svg')">
+    </div>
+    <div id="settings">
+      <img id="random" @click="clearAvatar()" :src="require('../assets/img/clear.svg')">
     </div>
 
     <Options />
@@ -18,8 +21,13 @@ export default {
     Options
   },
   methods: {
-    reloadPage() {
-      window.location.reload()
+    randomAvatar() {
+      this.$root.$refs.Options.resetMenu();
+      this.$root.$refs.App.randomAvatar();
+    },
+    clearAvatar(){
+      this.$root.$refs.Options.resetMenu();
+      this.$root.$refs.App.resetAvatar();
     }
   }
 }

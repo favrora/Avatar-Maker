@@ -29,6 +29,7 @@
       <path fill="#000000" fill-opacity="0.4" d="M111 265c-4,2 -9,4 -14,7 10,22 36,33 69,37l0 0c-31,-5 -55,-25 -55,-42 0,-1 0,-1 0,-2z"/>
       <path fill="#000000" fill-opacity="0.4" d="M262 272c-4,-3 -9,-5 -14,-7 0,0 0,1 0,2 0,17 -24,37 -55,42l0 0c33,-4 59,-15 69,-37z"/>
     </g>
+    <g id="c_none"></g>
   </svg>
 </template>
 
@@ -42,18 +43,25 @@ export default {
   },
 
   methods: {
-    picker: function() {
-    	var chosenClothes = Math.floor(Math.random() * this.list.length);
-      var chosenNameClothes = this.list[chosenClothes];
-
-      document.querySelector(chosenNameClothes).classList.add('show');
+    picker(option = false){
+      this.hide_all();
+      option
+        ? document.querySelector(option).classList.add('show')
+        : document.querySelector(this.random_option()).classList.add('show');
+    },
+    random_option(){
+      var chosenClothes = Math.floor(Math.random() * this.list.length);
+      return this.list[chosenClothes];
+    },
+    hide_all(){
+      for (let i = 0; i < this.list.length; i++){
+        document.querySelector(this.list[i]).classList.remove('show');
+      }
     }
   },
 
-  mounted() {
-    window.addEventListener('load', () => {
-      this.picker();
-    })
+  created() {
+    this.$root.$refs.Clothes = this;
   }
 }
 </script>

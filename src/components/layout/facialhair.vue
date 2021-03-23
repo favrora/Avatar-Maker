@@ -26,18 +26,25 @@ export default {
   },
 
   methods: {
-    picker: function() {
-    	var chosenFacialHair = Math.floor(Math.random() * this.list.length);
-      var chosenNameFacialHair = this.list[chosenFacialHair];
-
-      document.querySelector(chosenNameFacialHair).classList.add('show');
+    picker(option = false){
+      this.hide_all();
+      option
+        ? document.querySelector(option).classList.add('show')
+        : document.querySelector(this.random_option()).classList.add('show');
+    },
+    random_option(){
+      var chosenFacialHair = Math.floor(Math.random() * this.list.length);
+      return this.list[chosenFacialHair];
+    },
+    hide_all(){
+      for (let i = 0; i < this.list.length; i++){
+        document.querySelector(this.list[i]).classList.remove('show');
+      }
     }
   },
 
-  mounted() {
-    window.addEventListener('load', () => {
-      this.picker();
-    })
+  created() {
+    this.$root.$refs.FacialHair = this;
   }
 }
 </script>
