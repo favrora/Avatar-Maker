@@ -50,13 +50,13 @@ In order to run it locally you'll need to fetch some dependencies and a basic se
 ## Open tasks
 
 * [Align the avatar to the bottom for mobile devices.](https://github.com/favrora/Avatar-Maker/issues/9)
-* [Change random avatar without reloading the site](https://github.com/favrora/Avatar-Maker/issues/8)
 * [Add the ability to change color](https://github.com/favrora/Avatar-Maker/issues/14)
 * [Add a female avatar](https://github.com/favrora/Avatar-Maker/issues/15)
 * [Configure the avatar download function](https://github.com/favrora/Avatar-Maker/issues/16)
 
 ## Completed tasks
 
+* ~~Change random avatar without reloading the site.~~ | Done by [Bruno Neves](https://github.com/7br-uno) | 23.03.2021
 * ~~Add function to download created avatar as a png image.~~ | Done by [Peter H.](https://github.com/PetFeld) | 01.03.2021
 * ~~Create a demo site.~~ | Done by [Andrew Kliskey](https://github.com/andrewkliskey) | 03.02.2021
 
