@@ -1,0 +1,40 @@
+/******************************
+***** Options Color SCSS ******
+******************************/
+
+.skinColorBox {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  z-index: 210;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 400ms;
+  border-radius: 50%;
+  background: #b97be2;
+  box-shadow: 0 0 7px #909090;
+  &:hover {
+    box-shadow: 0 0 10px #3d3d3d;
+  }
+}
+
+#cirlceOption {
+  top: 10px;
+  left: 10px;
+}
+
+#ColorPicker {
+  g {
+    display: block!important;
+  }
+}
+
+#whiteSkin {
+  top: 20px;
+  left: 80px;
+}
+
+#blackSkin {
+  top: 70px;
+  left: 20px;
+}

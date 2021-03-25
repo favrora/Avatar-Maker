@@ -1,10 +1,11 @@
 <template>
   <div id="footer">
-    <div id="settings">
-      <img id="random" @click="randomAvatar()" :src="require('../assets/img/random.svg')">
-    </div>
-    <div id="settings">
-      <img id="random" @click="clearAvatar()" :src="require('../assets/img/clear.svg')">
+    <div class="settings">
+      <img class="random" @click="randomAvatar()" :src="require('../assets/img/random.svg')">
+
+      <img class="random" @click="clearAvatar()" :src="require('../assets/img/clear.svg')">
+
+      <SaveImage/>
     </div>
 
     <Options />
@@ -13,12 +14,16 @@
 </template>
 
 <script>
-import Options from './options'
+import Options   from './options'
+
+// import save Image
+import SaveImage from './save_image'
 
 export default {
   name: "Footer",
   components: {
-    Options
+    Options,
+    SaveImage
   },
   methods: {
     randomAvatar() {

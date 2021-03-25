@@ -22,7 +22,7 @@ img {
 	overflow: hidden;
   max-width: 800px;
   width: 100%;
-  height: 580px;
+  height: 540px;
   margin: 0 auto;
   box-shadow: 0 0 7px $shadow;
 	background: #fff;
@@ -38,7 +38,7 @@ img {
 	overflow: hidden;
 	background: rgba(185, 192, 255, 0.28);
 	@include before-small-tablet {
-		height: calc(100vh - 80px);
+		height: calc(100vh - 120px);
 	}
   svg {
 		position: absolute;

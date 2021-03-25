@@ -2,6 +2,41 @@
 
 <div id="options">
  <div id="main" class="mn" v-if="mainOpt === true">
+  <div @click="OptionsHair = true; mainOpt = false">
+    <svg viewBox="0 0 180 180">
+      <g id="h_shorthairwaved">
+        <path fill="#000000" fill-opacity="0.2" d="M158 116l1 -8c4,-37 -31,-69 -69,-69l0 0c-38,0 -76,32 -69,69l2 8c2,-11 2,-16 9,-33 3,-6 7,-10 12,-15 3,-3 5,-5 7,-9 24,18 52,15 78,2 1,3 2,5 5,7 1,2 4,3 6,5 2,2 4,4 5,6 9,18 9,22 13,37z"/>
+        <path class="tinted" fill="#bb7748" d="M161 116c5,-9 8,-5 8,-31 0,-31 -9,-31 -15,-44 -3,-4 15,-16 0,-31 -13,-12 -22,3 -35,3 -7,-1 -15,-3 -23,-5 -8,-2 -31,-3 -43,4 -11,8 -20,17 -21,28 -14,10 -20,27 -20,45 0,11 3,22 7,31 1,0 3,0 4,0 0,-47 19,-43 27,-62 22,19 50,18 81,2 4,18 22,5 27,60l3 0z"/>
+      </g>
+    </svg>
+  </div>
+  <div @click="OptionsEyebrows = true; mainOpt = false">
+    <svg viewBox="0 0 140 140">
+      <g id="eb_default2">
+        <path fill="#000000" fill-opacity="0.7" d="M20 60c5,-4 11,-5 18,-6 5,-1 12,-1 20,1 -5,-6 -14,-10 -22,-7 -7,1 -13,5 -16,12z"/>
+        <path fill="#000000" fill-opacity="0.7" d="M117 60c-5,-4 -12,-5 -18,-6 -5,-1 -12,-1 -20,1 5,-6 14,-10 22,-7 7,1 13,5 16,12z"/>
+      </g>
+    </svg>
+  </div>
+  <div @click="OptionsEyes = true; mainOpt = false">
+    <svg viewBox="0 0 180 180">
+      <g id="e_surprised">
+        <circle fill="#e5e5e5" cx="50" cy="100" r="22"/>
+        <circle fill="#4D4D4D" stroke="#5F4A37" stroke-width="0.9" cx="50" cy="100" r="10"/>
+        <circle fill="#e5e5e5" cx="125" cy="100" r="22"/>
+        <circle fill="#4D4D4D" cx="125" cy="100" r="10"/>
+      </g>
+    </svg>
+  </div>
+  <div @click="OptionsMouths = true; mainOpt = false">
+    <svg viewBox="0 0 80 80">
+      <g id="m_smile">
+        <path fill="#000000" d="M40 60l0 0c13,0 24,-10 24,-23l0 -1 -48 0 0 1c0,13 11,23 24,23z"/>
+        <path fill="#FF4F6D" d="M40 60l0 0c6,0 11,-2 16,-5 -2,-3 -5,-5 -9,-5 -3,0 -5,1 -7,2 -2,-1 -4,-2 -7,-2 -4,0 -7,2 -9,5 5,3 10,5 16,5z"/>
+        <path fill="#FEFEFE" d="M59 36l-38 0 0 2c0,3 2,5 4,5l30 0c2,0 4,-2 4,-5l0 -2z"/>
+      </g>
+    </svg>
+  </div>
   <div @click="facialHair = true; mainOpt = false">
     <svg viewBox="0 0 200 200">
       <g id="ff_magestic">
@@ -17,15 +52,6 @@
       </g>
     </svg>
   </div>
-  <div @click="OptionsMouths = true; mainOpt = false">
-    <svg viewBox="0 0 80 80">
-      <g id="m_smile">
-        <path fill="#000000" d="M40 60l0 0c13,0 24,-10 24,-23l0 -1 -48 0 0 1c0,13 11,23 24,23z"/>
-        <path fill="#FF4F6D" d="M40 60l0 0c6,0 11,-2 16,-5 -2,-3 -5,-5 -9,-5 -3,0 -5,1 -7,2 -2,-1 -4,-2 -7,-2 -4,0 -7,2 -9,5 5,3 10,5 16,5z"/>
-        <path fill="#FEFEFE" d="M59 36l-38 0 0 2c0,3 2,5 4,5l30 0c2,0 4,-2 4,-5l0 -2z"/>
-      </g>
-    </svg>
-  </div>
   <div @click="OptionsClothes = true; mainOpt = false">
     <svg viewBox="0 0 280 280">
       <g id="cc_blazer">
@@ -35,32 +61,6 @@
         <path fill="#ffffff" d="M204 230c10,-10 12,-13 23,-2 -8,1 -15,2 -23,2z"/>
         <path fill="#000000" fill-opacity="0.7" d="M180 200c-27,24 -54,23 -80,-1 0,-1 1,-3 1,-5l3 2c24,23 48,23 72,0l3 -2c0,2 1,4 1,6z"/>
         <path fill="#000000" fill-opacity="0.3" d="M109 280l62 0c6,-24 11,-57 9,-89 -2,1 -4,3 -6,5 -4,2 -7,5 -11,7 -21,11 -42,6 -63,-12 -2,32 3,65 9,89z"/>
-      </g>
-    </svg>
-  </div>
-  <div @click="OptionsEyes = true; mainOpt = false">
-    <svg viewBox="0 0 180 180">
-      <g id="e_surprised">
-        <circle fill="#e5e5e5" cx="50" cy="100" r="22"/>
-        <circle fill="#4D4D4D" stroke="#5F4A37" stroke-width="0.9" cx="50" cy="100" r="10"/>
-        <circle fill="#e5e5e5" cx="125" cy="100" r="22"/>
-        <circle fill="#4D4D4D" cx="125" cy="100" r="10"/>
-      </g>
-    </svg>
-  </div>
-  <div @click="OptionsEyebrows = true; mainOpt = false">
-    <svg viewBox="0 0 140 140">
-      <g id="eb_default2">
-        <path fill="#000000" fill-opacity="0.7" d="M20 60c5,-4 11,-5 18,-6 5,-1 12,-1 20,1 -5,-6 -14,-10 -22,-7 -7,1 -13,5 -16,12z"/>
-        <path fill="#000000" fill-opacity="0.7" d="M117 60c-5,-4 -12,-5 -18,-6 -5,-1 -12,-1 -20,1 5,-6 14,-10 22,-7 7,1 13,5 16,12z"/>
-      </g>
-    </svg>
-  </div>
-  <div @click="OptionsHair = true; mainOpt = false">
-    <svg viewBox="0 0 180 180">
-      <g id="h_shorthairwaved">
-        <path fill="#000000" fill-opacity="0.2" d="M158 116l1 -8c4,-37 -31,-69 -69,-69l0 0c-38,0 -76,32 -69,69l2 8c2,-11 2,-16 9,-33 3,-6 7,-10 12,-15 3,-3 5,-5 7,-9 24,18 52,15 78,2 1,3 2,5 5,7 1,2 4,3 6,5 2,2 4,4 5,6 9,18 9,22 13,37z"/>
-        <path class="tinted" fill="#bb7748" d="M161 116c5,-9 8,-5 8,-31 0,-31 -9,-31 -15,-44 -3,-4 15,-16 0,-31 -13,-12 -22,3 -35,3 -7,-1 -15,-3 -23,-5 -8,-2 -31,-3 -43,4 -11,8 -20,17 -21,28 -14,10 -20,27 -20,45 0,11 3,22 7,31 1,0 3,0 4,0 0,-47 19,-43 27,-62 22,19 50,18 81,2 4,18 22,5 27,60l3 0z"/>
       </g>
     </svg>
   </div>
@@ -128,7 +128,6 @@
 
 
 <script>
-
 import  OptionsFacialHair  from './options/facialhair'
 import  OptionsGlasses     from './options/glasses'
 import  OptionsMouths      from './options/mouths'
@@ -180,5 +179,4 @@ export default {
     this.$root.$refs.Options = this;
   }
 }
-
 </script>

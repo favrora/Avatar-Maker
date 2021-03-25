@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <div id="avatar">
+      <OptionsColor />
       <Accesories />
       <Clothes />
       <Eyebrows />
@@ -13,7 +14,6 @@
       <Tattoos />
     </div>
     <Footer />
-    <SaveImage/>
   </div>
 </template>
 
@@ -30,11 +30,11 @@ import Mounths     from './components/layout/mouths'
 import SkinColor   from './components/layout/SkinColor'
 import Tattoos     from './components/layout/tattoos'
 
+// import options color
+import OptionsColor from './components/optionsColor'
+
 // import footer
 import Footer      from './components/footer'
-
-// import save Image
-import SaveImage   from './components/save_image'
 
 export default {
   name: 'App',
@@ -50,11 +50,11 @@ export default {
     SkinColor,
     Tattoos,
     Footer,
-    SaveImage
+    OptionsColor
   },
 
   methods: {
-    resetAvatar(){
+    resetAvatar() {
       this.$root.$refs.Accesories.picker('#g_none');
       this.$root.$refs.Clothes.picker('#c_none');
       this.$root.$refs.Eyebrows.picker('#eb_none');
@@ -63,10 +63,10 @@ export default {
       this.$root.$refs.Glasses.picker('#g_none');
       this.$root.$refs.Hair.picker('#h_none');
       this.$root.$refs.Mouths.picker('#m_none');
-      // this.$root.$refs.SkinColor.picker();
+      this.$root.$refs.SkinColor.picker('#skin_white');
       this.$root.$refs.Tattoos.picker('#t_none');
     },
-    randomAvatar(){
+    randomAvatar() {
       this.$root.$refs.Accesories.picker();
       this.$root.$refs.Clothes.picker();
       this.$root.$refs.Eyebrows.picker();
@@ -75,7 +75,7 @@ export default {
       this.$root.$refs.Glasses.picker();
       this.$root.$refs.Hair.picker();
       this.$root.$refs.Mouths.picker();
-      // this.$root.$refs.SkinColor.picker();
+      this.$root.$refs.SkinColor.picker();
       this.$root.$refs.Tattoos.picker();
     }
   },
@@ -98,5 +98,6 @@ export default {
 @import "./assets/sass/responsive";
 @import "./assets/sass/avatar";
 @import "./assets/sass/footer";
-@import "./assets/sass/save_image"
+@import "./assets/sass/save_image";
+@import "./assets/sass/options_color";
 </style>

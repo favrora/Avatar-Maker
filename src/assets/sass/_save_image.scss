@@ -2,35 +2,3 @@
 ******* SaveImage SCSS ********
 ******************************/
 
-#save-image {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 80px;
-  background: #e2e2e2;
-  bottom: 0;
-  z-index: 120;
-}
-
-.save-button {
-  transition-duration:0.3s;
-  display: block;
-  width: 100%;
-  height: 100%;
-  border: none;
-  border-radius: 4px;
-  background-color: #c3c3c3;
-}
-
-.save-button:hover {
-  background-color: #00790d;
-  color: white;
-  cursor: pointer;
-}
-
-.save-button:focus {
-    outline: none;
-}

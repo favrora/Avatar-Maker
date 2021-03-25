@@ -1,5 +1,5 @@
 <template>
-  <svg id="facialhair2" width="360px" height="360px" viewBox="0 0 360 360" style="z-index: 110">
+  <svg id="facialhair2" width="360px" height="360px" viewBox="0 0 360 360" style="z-index: 130">
     <g id="f_magnum">
       <path class="tinted" fill="#6f2912" d="M170 201c7,-1 10,-4 10,-10 0,6 3,9 10,10 10,1 12,-3 20,-3 7,1 8,2 10,2 1,0 1,-1 1,-2 -6,-16 -26,-17 -31,-16 -6,1 -10,4 -10,9 0,-5 -4,-8 -10,-9 -5,-1 -25,0 -31,16 0,1 0,2 1,2 2,0 3,-1 10,-2 8,0 10,4 20,3z"/>
     </g>

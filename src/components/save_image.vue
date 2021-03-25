@@ -1,6 +1,6 @@
 <template>
-  <div id="save-image">
-    <button type="button" class="save-button" @click="saveImage">Download Avatar</button>
+  <div>
+    <img class="random" @click="saveImage" :src="require('../assets/img/download.svg')">
   </div>
 </template>
 
@@ -59,7 +59,7 @@ export default {
       //       as we need to pay attention to the order of the elements to make sure nothing
       //       is hidden by another element.
       const avatarDiv = document.querySelector('#avatar');
-      addIfAvailable(avatarDiv.querySelector('#skincolor').querySelector('.show'));
+      addIfAvailable(avatarDiv.querySelector('#skinColor').querySelector('.show'));
       addIfAvailable(avatarDiv.querySelector('#mouths').querySelector('.show'));
       addIfAvailable(avatarDiv.querySelector('#eyes').querySelector('.show'));
       addIfAvailable(avatarDiv.querySelector('#tattoos').querySelector('.show'));
@@ -74,8 +74,8 @@ export default {
 
       // Create an invisible canvas and render the combined SVG onto the canvas.
       const canvas = document.createElement("canvas");
-      canvas.width = 420;
-      canvas.height = 420;
+      canvas.width = 380;
+      canvas.height = 380;
       const ctx = canvas.getContext('2d');
       const drawn = Canvg.fromString(ctx, combinedSvg);
 
