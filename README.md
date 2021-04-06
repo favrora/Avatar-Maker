@@ -4,7 +4,7 @@ Collect your avatar from different parts. The code of this program is very easy,
 
 ## Demo
 
-[Demo version of the project](https://avatar-maker-vue.netlify.app/)
+[Demo version of the project](https://avatarx.netlify.app/)
 
 ## Preview
 
