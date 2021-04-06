@@ -38,6 +38,30 @@ import Footer      from './components/footer'
 
 export default {
   name: 'App',
+  metaInfo: {
+    title: 'Avatar Maker - Create your own avatar online',
+    htmlAttrs: {
+      lang: 'en'
+    },
+
+    meta: [
+      // Meta Seo
+      { vmid: 'robots', name: 'robots', content: 'index, follow' },
+      { vmid: 'description', name: 'description', content: 'Collect your avatar from different parts. Create your own avatar with Avatar Maker and download avatar image. Avatar Maker is absolutely free.' },
+      { vmid: 'theme-color', name: 'theme-color', content: '#0077FF' },
+
+      // Open Graph
+      { vmid: 'og:locale', property: 'og:locale', content: 'en_US' },
+      { vmid: 'og:site_name', property: 'og:site_name', content: 'Avatar Maker' },
+      { vmid: 'og:type', property: 'og:type', content: 'website' },
+      { vmid: 'og:image', property: 'og:image', content: 'https://github.com/favrora/Avatar-Maker/blob/master/src/assets/img/preview.jpg' },
+
+      // Twitter
+      { vmid: 'twitter:card', property: 'twitter:card', content: 'summary_large_image' },
+      { vmid: 'twitter:creator', property: 'twitter:creator', content: 'favrora_com' },
+    ],
+  },
+
   components: {
     Accesories,
     Clothes,
