@@ -14,7 +14,7 @@ export default {
      * This method creates an invisible anchor element which is automatically clicked
      * in order to download the image referenced by the URL passed to the method,
      *
-     * @param {string} imageURL URL to the image to download
+     * @param {string} imageURL URL to the image to downloadя
      */
     downloadImage(imageURL) {
       // Creating an invisible anchor element and executing the 'click'
