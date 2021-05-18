@@ -10,6 +10,10 @@ Collect your avatar from different parts. The code of this program is very easy,
 
 <img src="src/assets/img/preview.gif" width="600px">
 
+## Mobile app
+
+Link to the Avatar Maker mobile app for Android on Google Play: [Mobile app](https://play.google.com/store/apps/details?id=com.favrora.avatar)
+
 ## Development
 
 Getting Start:
