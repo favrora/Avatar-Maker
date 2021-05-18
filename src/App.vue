@@ -125,3 +125,11 @@ export default {
 @import "./assets/sass/save_image";
 @import "./assets/sass/options_color";
 </style>
+
+<style>
+@media screen and (max-width: 768px) {
+  .download-img {
+    display: none;
+  }
+}
+</style>
