@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img class="random" @click="saveImage" :src="require('../assets/img/download.svg')">
+    <img class="random download-img" @click="saveImage" :src="require('../assets/img/download.svg')">
   </div>
 </template>
 
