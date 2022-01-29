@@ -58,12 +58,6 @@ In order to run it locally you'll need to fetch some dependencies and a basic se
     ```sh
     $ npm run serve
     ```
-    
-* To build production bundle use:
-
-   ```sh
-   $ npm run build
-   ```
 
 ## Open tasks
 
