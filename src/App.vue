@@ -34,7 +34,7 @@ import Tattoos     from './components/layout/tattoos'
 import OptionsColor from './components/optionsColor'
 
 // import footer
-import Footer      from './components/footer'
+import Footer from './components/footer'
 
 export default {
   name: 'App',

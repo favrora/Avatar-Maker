@@ -1,6 +1,17 @@
+<p align="left">
+    <img alt="Repository size" src="https://img.shields.io/github/repo-size/favrora/Avatar-Maker?color=blue">
+    <a href="https://github.com/favrora/Avatar-Maker/stargazers">
+      <img alt="Stargazers" src="https://img.shields.io/github/stars/favrora/Avatar-Maker?color=blue">
+    </a>
+    <img alt="Contributors" src="https://img.shields.io/github/contributors/favrora/Avatar-Maker?color=blue">
+</p>
+
+
 # Avatar Maker
 
 Collect your avatar from different parts. The code of this program is very easy, any developer will be able to understand the code. SVG is used to draw an avatar.
+
+<a href="https://www.producthunt.com/posts/avatar-maker-2?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-avatar-maker-2" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=288616&theme=dark" alt="Avatar Maker - Create your own avatar | Product Hunt" style="width: 200px; height: 44px;" width="200" height="44" /></a> <a href="https://www.producthunt.com/posts/avatar-maker-2?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-avatar-maker-2" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=288616&theme=dark&period=daily" alt="Avatar Maker - Create your own avatar | Product Hunt" style="width: 200px; height: 44px;" width="200" height="44" /></a>
 
 ## Demo
 
@@ -62,10 +73,4 @@ In order to run it locally you'll need to fetch some dependencies and a basic se
 
 * ~~Change random avatar without reloading the site.~~ | Done by [Bruno Neves](https://github.com/7br-uno) | 23.03.2021
 * ~~Add function to download created avatar as a png image.~~ | Done by [Peter H.](https://github.com/PetFeld) | 01.03.2021
-* ~~Create a demo site.~~ | Done by [Andrew Kliskey](https://github.com/andrewkliskey) | 03.02.2021
-
-## Donate
-
-The program is absolutely free, but you can help us in development by donating money. All donated money will go towards the development of the Avatar Maker project.
-
-[Send donation](https://favrora.com/projects/avatar-maker)
+* ~~Create a demo site~~ | Done by [Andrew Kliskey](https://github.com/andrewkliskey) | 03.02.2021
