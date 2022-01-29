@@ -1,3 +1,10 @@
+<p align="center">
+    <img alt="Repository size" src="https://img.shields.io/github/repo-size/favrora/Avatar-Maker">
+    [![Stargazers][stars-shield]][https://github.com/favrora/Avatar-Maker/stargazers]
+    <a href="https://www.producthunt.com/posts/avatar-maker-2?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-avatar-maker-2" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=288616&theme=dark" alt="Avatar Maker - Create your own avatar | Product Hunt" style="width: 200px; height: 44px;" width="200" height="44" /></a> <a href="https://www.producthunt.com/posts/avatar-maker-2?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-avatar-maker-2" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=288616&theme=dark&period=daily" alt="Avatar Maker - Create your own avatar | Product Hunt" style="width: 200px; height: 44px;" width="200" height="44" /></a>
+</p>
+
+
 # Avatar Maker
 
 Collect your avatar from different parts. The code of this program is very easy, any developer will be able to understand the code. SVG is used to draw an avatar.
@@ -63,7 +70,3 @@ In order to run it locally you'll need to fetch some dependencies and a basic se
 * ~~Change random avatar without reloading the site.~~ | Done by [Bruno Neves](https://github.com/7br-uno) | 23.03.2021
 * ~~Add function to download created avatar as a png image.~~ | Done by [Peter H.](https://github.com/PetFeld) | 01.03.2021
 * ~~Create a demo site~~ | Done by [Andrew Kliskey](https://github.com/andrewkliskey) | 03.02.2021
-
-## Test
-
-<a href="https://www.producthunt.com/posts/avatar-maker-2?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-avatar-maker-2" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=288616&theme=dark" alt="Avatar Maker - Create your own avatar | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a> <a href="https://www.producthunt.com/posts/avatar-maker-2?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-avatar-maker-2" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=288616&theme=dark&period=daily" alt="Avatar Maker - Create your own avatar | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
