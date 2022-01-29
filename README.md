@@ -66,4 +66,8 @@ In order to run it locally you'll need to fetch some dependencies and a basic se
 
 ## Test
 
-<a href="https://www.producthunt.com/posts/avatar-maker-2?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-avatar-maker-2" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=288616&theme=dark" alt="Avatar Maker - Create your own avatar | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+<div style="displat: flex">
+ <a href="https://www.producthunt.com/posts/avatar-maker-2?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-avatar-maker-2" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=288616&theme=dark" alt="Avatar Maker - Create your own avatar | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+
+  <a href="https://www.producthunt.com/posts/avatar-maker-2?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-avatar-maker-2" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=288616&theme=dark&period=daily" alt="Avatar Maker - Create your own avatar | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+</div>
