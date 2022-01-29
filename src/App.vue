@@ -2,6 +2,7 @@
   <div id="app">
     <div id="avatar">
       <OptionsColor />
+      <Github />
       <Accesories />
       <Clothes />
       <Eyebrows />
@@ -35,6 +36,9 @@ import OptionsColor from './components/optionsColor'
 
 // import footer
 import Footer from './components/footer'
+
+// Github icon component
+import Github from './components/layout/githubIcon'
 
 export default {
   name: 'App',
@@ -74,7 +78,8 @@ export default {
     SkinColor,
     Tattoos,
     Footer,
-    OptionsColor
+    OptionsColor,
+    Github
   },
 
   methods: {
