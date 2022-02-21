@@ -64,7 +64,6 @@ In order to run it locally you'll need to fetch some dependencies and a basic se
 * [Align the avatar to the bottom for mobile devices.](https://github.com/favrora/Avatar-Maker/issues/9)
 * [Add the ability to change color](https://github.com/favrora/Avatar-Maker/issues/14)
 * [Add a female avatar](https://github.com/favrora/Avatar-Maker/issues/15)
-* [Configure the avatar download function](https://github.com/favrora/Avatar-Maker/issues/16)
 
 ## Completed tasks
 
