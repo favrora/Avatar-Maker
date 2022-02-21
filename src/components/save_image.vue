@@ -41,7 +41,7 @@ export default {
      */
     async saveImage() {
       // We need to have a single svg element which is passed to canvg
-      let combinedSvg = '<svg width="100%" height="100%">';
+      let combinedSvg = '<div id="avatar" style="position:relative;width:100%;height:100%;"><svg width="360px" height="360px" viewBox="0 0 360 360" style="position: absolute;width: 100%;height: 100%;">';
 
       // Helper method to add only those group elements which actually exist
       // to the combined SVG string
@@ -60,22 +60,22 @@ export default {
       //       is hidden by another element.
       const avatarDiv = document.querySelector('#avatar');
       addIfAvailable(avatarDiv.querySelector('#skinColor').querySelector('.show'));
-      addIfAvailable(avatarDiv.querySelector('#mouths').querySelector('.show'));
-      addIfAvailable(avatarDiv.querySelector('#eyes').querySelector('.show'));
       addIfAvailable(avatarDiv.querySelector('#tattoos').querySelector('.show'));
-      addIfAvailable(avatarDiv.querySelector('#facialhair2').querySelector('.show'));
-      addIfAvailable(avatarDiv.querySelector('#eyebrows').querySelector('.show'));
       addIfAvailable(avatarDiv.querySelector('#accesories').querySelector('.show'));
       addIfAvailable(avatarDiv.querySelector('#clothes').querySelector('.show'));
+      addIfAvailable(avatarDiv.querySelector('#eyebrows').querySelector('.show'));
+      addIfAvailable(avatarDiv.querySelector('#eyes').querySelector('.show'));
+      addIfAvailable(avatarDiv.querySelector('#mouths').querySelector('.show'));
       addIfAvailable(avatarDiv.querySelector('#hair').querySelector('.show'));
+      addIfAvailable(avatarDiv.querySelector('#facialhair2').querySelector('.show'));
       addIfAvailable(avatarDiv.querySelector('#glasses').querySelector('.show'));
 
-      combinedSvg = combinedSvg + '</svg>';
+      combinedSvg = combinedSvg + '</svg></div>';
 
       // Create an invisible canvas and render the combined SVG onto the canvas.
       const canvas = document.createElement("canvas");
-      canvas.width = 380;
-      canvas.height = 380;
+      canvas.width = 1200;
+      canvas.height = 1200;
       const ctx = canvas.getContext('2d');
       const drawn = Canvg.fromString(ctx, combinedSvg);
 

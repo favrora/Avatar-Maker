@@ -1,18 +1,20 @@
 {
   "name": "avatar-maker",
-  "version": "0.2.0",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "node-sass": "^7.0.1",
     "vue": "^2.6.11",
     "vue-meta": "^2.4.0"
   },
   "devDependencies": {
     "@vue/cli-service": "~4.2.0",
     "canvg": "^3.0.7",
+    "sass": "^1.49.0",
     "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11"
   },
