@@ -53,6 +53,18 @@ In order to run it locally you'll need to fetch some dependencies and a basic se
     $ npm install
     ```
 
+* To resolve dependency conflict related to sass-loader and node-sass versions, you can try running the npm install command with the --force flag or --legacy-peer-deps flag to force the installation.
+
+    ```sh
+    $ npm install --force
+    ```
+    or
+    
+    ```sh
+    $ npm install --legacy-peer-deps
+    ```
+
+
 * Start the development server and open [`http://localhost:8080`](http://localhost:8080).
 
     ```sh
