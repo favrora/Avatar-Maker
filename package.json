@@ -12,7 +12,7 @@
     "vue-meta": "^2.4.0"
   },
   "devDependencies": {
-    "@vue/cli-service": "~4.2.0",
+    "@vue/cli-service": "~5.0.8",
     "canvg": "^3.0.7",
     "sass": "^1.49.0",
     "sass-loader": "^8.0.2",
